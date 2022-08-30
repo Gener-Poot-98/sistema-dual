@@ -1,10 +1,10 @@
 # yii console commands
-/yii
-/yii_test
-/yii_test.bat
+# /yii
+# /yii_test
+# /yii_test.bat
 
 # phpstorm project files
-.idea
+# .idea
 
 # netbeans project files
 nbproject
@@ -21,21 +21,21 @@ Thumbs.db
 # /vendor
 
 # composer itself is not needed
-composer.phar
+# composer.phar
 
 # composer lock
-composer.lock
+# composer.lock
 
 # Mac DS_Store Files
 .DS_Store
 
 # phpunit itself is not needed
-phpunit.phar
+# phpunit.phar
 # local phpunit config
-/phpunit.xml
+# /phpunit.xml
 
 # vagrant runtime
-/.vagrant
+# /.vagrant
 
 # ignore generated files
 # /frontend/web/index.php
