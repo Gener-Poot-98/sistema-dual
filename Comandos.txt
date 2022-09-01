@@ -1,0 +1,29 @@
+Comandos de git 
+
+git --version : Comprobar la version de git
+git config --global : se configura de manera global
+git --global user.name
+git --global user.email
+git --global core-editor "code --wait" : Cofiguramos que se use el editor de texto code
+git config --global -e : Para ver la configuracion global que hemos configurado
+
+ls : Listar las carpetas
+pdw : para saber en que directorio nos encontramos
+cd.. Salir de el directorio anterior
+mkdir "nombre" Crea una carpeta desde la terminal de git
+
+git add : selecciona los archivos a una etapa stage
+git commit : Son los archivos de commit
+git status : EstadO de nuestra carpeta 
+git commit -m "Comentario" : Guarda los cambios
+
+git restore "nombre de archivo" : resrtaura el cambio de un archivo antes de subirlo al servidor
+git log --oneline : muestra todos los cambios que se han hecho de una manera resumida 
+
+git branch : muestra las ramas que el repositorio contiene
+git checkout -b "nombre": crea una nueva rama 
+git cat: muestra el contenido de la rama donde estas
+
+Nota: Para unir las ramas que tenemos debemos estar en la rama de main 
+
+git merge rama "nombre de la rama que se unira con el main"

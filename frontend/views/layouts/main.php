@@ -22,25 +22,31 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="d-flex flex-column h-100">
+<body>
+
 <?php $this->beginBody() ?>
 
-<header>
+<div class="wrap">
+    <div class="row">
+        <img src="<?= Yii::getAlias('@web')?>/img/itsva.png" style = "display: block; max-width: 100%; height: auto;" alt="Encabezo del Tec de Valladolid">
+    </div>
+
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => Html::img('@web/img/home.svg', ['alt' => Yii::$app->name, 'style' => 'height: 50px; width: 171px; top: 1px; left: 12px; position: absolute;']),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
+            'class' => 'navbar navbar-expand-md navbar-dark bg-dark',
         ],
     ]);
+    
     $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
+        ['label' => 'Inicio', 'url' => ['/site/index']],
+        ['label' => 'Acerca de', 'url' => ['/site/about']],
+        ['label' => 'Contacto', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+        $menuItems[] = ['label' => 'Registrarse', 'url' => ['/site/signup']];
     }
 
     echo Nav::widget([
@@ -48,18 +54,19 @@ AppAsset::register($this);
         'items' => $menuItems,
     ]);
     if (Yii::$app->user->isGuest) {
-        echo Html::tag('div',Html::a('Login',['/site/login'],['class' => ['btn btn-link login text-decoration-none']]),['class' => ['d-flex']]);
+        echo Html::tag('div',Html::a('Iniciar sesión',['/site/login'],['class' => ['btn btn-outline-info']]),['class' => ['d-flex']]);
     } else {
         echo Html::beginForm(['/site/logout'], 'post', ['class' => 'd-flex'])
             . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout text-decoration-none']
+                'Salir (' . Yii::$app->user->identity->username . ')',
+                ['class' => 'btn btn-outline-danger']
             )
             . Html::endForm();
     }
     NavBar::end();
     ?>
-</header>
+</div>
+
 
 <main role="main" class="flex-shrink-0">
     <div class="container">
