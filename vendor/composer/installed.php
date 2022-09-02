@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '2.0.46',
-        'version' => '2.0.46.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '008d2e2ee3fb73bfb361f5dd8cc3138471db7f7e',
         'name' => 'yiisoft/yii2-app-advanced',
         'dev' => true,
     ),
@@ -38,12 +38,12 @@
             'dev_requirement' => false,
         ),
         'bower-asset/jquery' => array(
-            'pretty_version' => '3.6.0',
-            'version' => '3.6.0.0',
+            'pretty_version' => '3.6.1',
+            'version' => '3.6.1.0',
             'type' => 'bower-asset',
             'install_path' => __DIR__ . '/../bower-asset/jquery',
             'aliases' => array(),
-            'reference' => 'e786e3d9707ffd9b0dd330ca135b66344dcef85a',
+            'reference' => '3711efedf0ca2e998cd0417324f717f2e0b828ec',
             'dev_requirement' => false,
         ),
         'bower-asset/punycode' => array(
@@ -221,6 +221,15 @@
             'install_path' => __DIR__ . '/../masterminds/html5',
             'aliases' => array(),
             'reference' => '897eb517a343a2281f11bc5556d6548db7d93947',
+            'dev_requirement' => true,
+        ),
+        'mdmsoft/yii2-admin' => array(
+            'pretty_version' => '2.12',
+            'version' => '2.12.0.0',
+            'type' => 'yii2-extension',
+            'install_path' => __DIR__ . '/../mdmsoft/yii2-admin',
+            'aliases' => array(),
+            'reference' => '10e526fbcf6350ed4cc9ba6298f887d611685367',
             'dev_requirement' => true,
         ),
         'myclabs/deep-copy' => array(
@@ -767,12 +776,12 @@
             'dev_requirement' => false,
         ),
         'yiisoft/yii2-app-advanced' => array(
-            'pretty_version' => '2.0.46',
-            'version' => '2.0.46.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '008d2e2ee3fb73bfb361f5dd8cc3138471db7f7e',
             'dev_requirement' => false,
         ),
         'yiisoft/yii2-bootstrap5' => array(
