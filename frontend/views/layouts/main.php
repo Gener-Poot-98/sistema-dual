@@ -38,6 +38,7 @@ AppAsset::register($this);
         ['label' => 'Inicio', 'url' => ['/site/index']],
         ['label' => 'Acerca de', 'url' => ['/site/about']],
         ['label' => 'Contacto', 'url' => ['/site/contact']],
+        ['label' => 'Quiero ser Dual', 'url' => ['/preregistro/create']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Registrate', 'url' => ['/site/signup']];
