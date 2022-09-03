@@ -1,0 +1,10 @@
+body {
+    background-image: url('./img/fondo1.webp'); 
+    background-attachment: fixed;
+    width: 100%;
+    height:auto; 
+    background-size: cover; 
+    background-repeat:no-repeat; 
+    background-position: auto;
+    
+}
