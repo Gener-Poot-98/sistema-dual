@@ -27,6 +27,7 @@ use yii\helpers\ArrayHelper;
  */
 class Preregistro extends \yii\db\ActiveRecord
 {
+    public $archivoKardex, $archivoConstancia_ingles, $archivoConstancia_servicio_social, $archivoConstancia_creditos_complementarios;
     /**
      * {@inheritdoc}
      */
@@ -45,7 +46,10 @@ class Preregistro extends \yii\db\ActiveRecord
             [['ingenieria_id', 'estado_registro_id'], 'integer'],
             [['created_at'], 'safe'],
             [['nombre', 'matricula', 'email'], 'string', 'max' => 45],
-            [['kardex', 'constancia_ingles', 'constancia_servicio_social', 'constancia_creditos_complementarios'], 'string', 'max' => 2500],
+            //[['kardex', 'constancia_ingles', 'constancia_servicio_social', 'constancia_creditos_complementarios'], 'string', 'max' => 2500],
+
+            [['archivoKardex', 'archivoConstancia_ingles', 'archivoConstancia_servicio_social', 'archivoConstancia_creditos_complementarios'], 'file', 'extensions' => 'pdf'],
+
             [['estado_registro_id'], 'exist', 'skipOnError' => true, 'targetClass' => EstadoRegistro::className(), 'targetAttribute' => ['estado_registro_id' => 'id']],
             [['ingenieria_id'], 'exist', 'skipOnError' => true, 'targetClass' => Ingenieria::className(), 'targetAttribute' => ['ingenieria_id' => 'id']],
         ];
@@ -74,10 +78,10 @@ class Preregistro extends \yii\db\ActiveRecord
             'matricula' => 'Matricula',
             'email' => 'Email',
             'ingenieria_id' => 'Ingenieria',
-            'kardex' => 'Kardex',
-            'constancia_ingles' => 'Constancia Ingles',
-            'constancia_servicio_social' => 'Constancia Servicio Social',
-            'constancia_creditos_complementarios' => 'Constancia Creditos Complementarios',
+            'archivoKardex' => 'Kardex',
+            'archivoConstancia_ingles' => 'Constancia Ingles',
+            'archivoConstancia_servicio_social' => 'Constancia Servicio Social',
+            'archivoConstancia_creditos_complementarios' => 'Constancia Creditos Complementarios',
             'created_at' => 'Created At',
             'estado_registro_id' => 'Estado Registro ID',
         ];

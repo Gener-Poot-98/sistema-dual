@@ -20,13 +20,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'ingenieria_id')->dropDownList($model->getIngenieriasList(), ['prompt'=>'Seleccione su Ingeniería']) ?>
 
-    <?= $form->field($model, 'kardex')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'archivoKardex')->fileInput() ?>
 
-    <?= $form->field($model, 'constancia_ingles')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'archivoConstancia_ingles')->fileInput() ?>
 
-    <?= $form->field($model, 'constancia_servicio_social')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'archivoConstancia_servicio_social')->fileInput() ?>
 
-    <?= $form->field($model, 'constancia_creditos_complementarios')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'archivoConstancia_creditos_complementarios')->fileInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
