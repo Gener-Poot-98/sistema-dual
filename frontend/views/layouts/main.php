@@ -27,9 +27,13 @@ $baseUrl = $asset->baseUrl;
 
     <!-- Navbar -->
     <!-- Navbar Transparent -->
-    <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
+    <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ms-auto">
         <div class="container">
+<<<<<<< HEAD
             <a class="navbar-brand  text-white " href="https://demos.creative-tim.com/soft-ui-design-system/presentation.html" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+=======
+            <a style="font-size:20px;" class="navbar-brand  text-white " href="https://demos.creative-tim.com/soft-ui-design-system/presentation.html" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+>>>>>>> refs/remotes/origin/main
                 Sistema de Eduación Dual
             </a>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,8 +43,8 @@ $baseUrl = $asset->baseUrl;
                     <span class="navbar-toggler-bar bar3"></span>
                 </span>
             </button>
-            <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0 ms-lg-12 ps-lg-5" id="navigation">
-                <ul class="navbar-nav navbar-nav-hover w-100">
+            <div class="ms-auto" id="navigation">
+                <ul class="navbar-nav navbar-nav-hover w-100 text-bold" style="font-size:20px ;">
                     <?php
 
 
