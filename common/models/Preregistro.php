@@ -6,6 +6,8 @@ use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\Expression;
 use yii\helpers\ArrayHelper;
+use common\models\Ingenieria;
+use common\models\EstadoRegistro;
 
 /**
  * This is the model class for table "preregistro".
@@ -42,7 +44,7 @@ class Preregistro extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nombre', 'matricula', 'email', 'ingenieria_id', 'kardex', 'constancia_ingles', 'constancia_servicio_social', 'constancia_creditos_complementarios'], 'required'],
+            [['nombre', 'matricula', 'email', 'ingenieria_id'], 'required'],
             [['ingenieria_id', 'estado_registro_id'], 'integer'],
             [['created_at'], 'safe'],
             [['nombre', 'matricula', 'email'], 'string', 'max' => 45],
@@ -107,12 +109,32 @@ class Preregistro extends \yii\db\ActiveRecord
         return $this->hasOne(Ingenieria::className(), ['id' => 'ingenieria_id']);
     }
 
-        public function getIngenieriasList()
+    public function getIngenieriasList()
     {
         $ingenierias = Ingenieria::find()->all();
 
         $ingenieriasList = ArrayHelper::map($ingenierias, 'id', 'nombre');
 
         return $ingenieriasList;
+    }
+
+    public function getIngenieriaNombre() 
+    { 
+        return $this->ingenieria->nombre; 
+    }
+
+
+    public function getEstadoRegistroNombreList()
+    {
+        $estadoRegistro = EstadoRegistro::find()->all();
+
+        $estadoRegistroNombreList = ArrayHelper::map($estadoRegistro, 'id', 'nombre');
+
+        return $estadoRegistroNombreList;
+    }
+
+    public function getEstadoRegistroNombre() 
+    { 
+        return $this->estadoRegistro->nombre; 
     }
 }

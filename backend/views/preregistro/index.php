@@ -7,7 +7,7 @@ use yii\grid\GridView;
 use common\models\Preregistro;
 
 /* @var $this yii\web\View */
-/* @var $searchModel frontend\models\search\PreregistroSearch */
+/* @var $searchModel backend\models\search\PreregistroSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Preregistros';
@@ -16,10 +16,6 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="preregistro-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= Html::a('Create Preregistro', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
@@ -33,13 +29,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'nombre',
             'matricula',
             'email:email',
-            'ingenieria_id',
+            [ 'label' => 'Ingenieria','attribute' => 'ingenieriaNombre', 'filter' => $searchModel->getIngenieriasList() ],
             //'kardex',
             //'constancia_ingles',
             //'constancia_servicio_social',
             //'constancia_creditos_complementarios',
             //'created_at',
             //'estado_registro_id',
+            [ 'label' => 'Estado','attribute' => 'estadoRegistroNombre', 'filter' => $searchModel->getEstadoRegistroNombreList() ],
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Preregistro $model, $key, $index, $column) {
