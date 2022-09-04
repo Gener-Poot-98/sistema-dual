@@ -54,9 +54,12 @@ $baseUrl = $asset->baseUrl;
                         . '</li>';
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> main
                     if (Yii::$app->user->isGuest) {
 
                         echo '<li class="nav-item"> '
@@ -68,6 +71,18 @@ $baseUrl = $asset->baseUrl;
                             )
                             . '</li>';
 
+<<<<<<< HEAD
+=======
+                            echo '<li class="nav-item"> '
+                            . Html::a(
+                                "<i class=\"fa fa-icon\"></i> "
+                                    . Yii::t('app', 'Quiero ser Dual'),
+                                ['/preregistro/create'],
+                                ['class' => 'pull-right', 'style' => 'padding-right:10px;']
+                            )
+                            . '</li>';
+
+>>>>>>> main
 
                         echo '<li class="nav-item">'
 

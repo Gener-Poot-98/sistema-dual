@@ -8,10 +8,16 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
+<<<<<<< HEAD
     'name' => 'Sistema-Dual',
+=======
+    'name' => "Sistema Dual",
+>>>>>>> main
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'language'=>'es', // Este es el lenguaje en el que querés que muestre las cosas
+    'sourceLanguage'=>'en',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
