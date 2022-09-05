@@ -18,7 +18,7 @@ $this->registerCss("
         border-radius: 5px;
         
     }
-    label, .preregistrp-fotm {
+    label, .preregistro-form {
         font-size:20px;
         
     }
@@ -26,6 +26,10 @@ $this->registerCss("
     .help-block{
         color: #fd5c70;
     }    
+    
+    .form-control {
+        font-size:20px;
+    }
     
     ");
 
@@ -51,7 +55,7 @@ $this->registerCss("
 
     <?= $form->field($model, 'archivoConstancia_creditos_complementarios')->fileInput() ?>
 
-    <div class="form-group">
+    <div class="col text-center">
         <?= Html::submitButton('Guardar', ['class' => 'btn btn-info btn-lg btn-block']) ?>
     </div>
 
