@@ -84,8 +84,8 @@ class Preregistro extends \yii\db\ActiveRecord
             'archivoConstancia_ingles' => 'Constancia Ingles',
             'archivoConstancia_servicio_social' => 'Constancia Servicio Social',
             'archivoConstancia_creditos_complementarios' => 'Constancia Creditos Complementarios',
-            'created_at' => 'Created At',
-            'estado_registro_id' => 'Estado Registro ID',
+            'created_at' => 'Fecha de registro',
+            'estado_registro_id' => 'Estado',
         ];
     }
 
@@ -137,4 +137,7 @@ class Preregistro extends \yii\db\ActiveRecord
     { 
         return $this->estadoRegistro->nombre; 
     }
+
+
+    
 }

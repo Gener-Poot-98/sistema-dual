@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
+use Yii;
 
 /**
  * PreregistroController implements the CRUD actions for Preregistro model.
@@ -168,6 +169,15 @@ class PreregistroController extends Controller
             $model->loadDefaultValues();
         }
 
+    }
+
+    public function actionDownload($filename)
+    {
+        $path = Yii::getAlias('@frontend') . '/web/' . $filename;
+        if(file_exists($path))
+        {
+            return Yii::$app->response->sendFile($path);
+        }
     }
 
 }
