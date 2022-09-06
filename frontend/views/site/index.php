@@ -20,7 +20,7 @@ $baseUrl = $asset->baseUrl;
                 <div class="col-lg-6 mx-auto">
                     <h2 class="text-primary text-gradient mb-0">Valoramos tu tiempo</h2>
                     <h2 class="">Al Instante</h2>
-                    <p class="lead">Estamos en el negocio para mejorar vidas <br /> </p>
+                    <p class="lead">Aprovecha el sistema de educación dual y trabaja con una empresa desde ahora!<br /> </p>
                 </div>
             </div>
         </div>
@@ -84,8 +84,8 @@ $baseUrl = $asset->baseUrl;
             </div>
             <div class="col-md-3 mx-auto mt-md-0 mt-5">
                 <div class="position-sticky" style="top:100px !important">
-                    <h4 class="">Páginas de presentación </h4>
-                    <h6 class="text-secondary">Éstas son solo una pequeña selección de las múltiples posibilidades que encontraras.</h6>
+                    <h4 class="">Sistema de Eduación Dual</h4>
+                    <h6 class="text-secondary">Éstas son solo una pequeña prueba de alumnos trabajando en una empresa desde septimo semestre!</h6>
                 </div>
             </div>
         </div>
@@ -98,18 +98,15 @@ $baseUrl = $asset->baseUrl;
     <div class="container">
         <div class="row">
             <div class="col-lg-5 ms-auto">
-                <h4 class="mb-1">Thank you for your support!</h4>
-                <p class="lead mb-0">Encontraras los mejores productos de Valladolid </p>
+                <h4 class="mb-1">¡Gracias por tu apoyo!</h4>
+                <p class="lead mb-0">Encontraras mas informacion en el Tecnologico Superior de Valladolid</p>
             </div>
             <div class="col-lg-5 me-lg-auto my-lg-auto text-lg-end mt-5">
                 <a href="https://twitter.com" class="btn btn-info mb-0 me-2" target="_blank">
                     <i class="fab fa-twitter me-1"></i> Tweet
                 </a>
                 <a href="https://www.facebook.com" class="btn btn-primary mb-0 me-2" target="_blank">
-                    <i class="fab fa-facebook-square me-1"></i> Share
-                </a>
-                <a href="https://www.pinterest.com" class="btn btn-dark mb-0 me-2" target="_blank">
-                    <i class="fab fa-pinterest me-1"></i> Pin it
+                    <i class="fab fa-facebook-square me-1"></i> facebook
                 </a>
             </div>
         </div>

@@ -11,6 +11,8 @@ return [
     'name' => "Sistema Dual",
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
+    'language'=>'es', // Este es el lenguaje en el que querés que muestre las cosas
+    'sourceLanguage'=>'en',
     'bootstrap' => ['log'],
     'modules' => [
         'admin' => [
@@ -59,12 +61,12 @@ return [
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
-            'site/*',
+            //'site/*',
             'site/login',
             'site/logout',
-            'admin/*',
+            //'admin/*',
             //'gii/*',
-            'user/*'
+            //'user/*'
             //'some-controller/some-action',
             // The actions listed here will be allowed to everyone including guests.
             // So, 'admin/*' should not appear here in the production, of course.
