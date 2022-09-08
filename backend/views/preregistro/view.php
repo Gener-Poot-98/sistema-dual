@@ -37,16 +37,51 @@ $this->params['breadcrumbs'][] = $this->title;
             { 
                 return $searchModel->ingenieria->nombre; 
             } ],
-            'kardex',
-            'constancia_ingles',
-            'constancia_servicio_social',
-            'constancia_creditos_complementarios',
+
+            //'kardex',
+            [
+                'attribute' => 'kardex',
+                'format' => 'html',
+                'value' => function($model)
+                {
+                    return Html::a(basename($model->kardex), ['download', 'filename' => $model -> kardex]);
+                }
+            ],
+            //'constancia_ingles',
+            [
+                'attribute' => 'constancia_ingles',
+                'format' => 'html',
+                'value' => function($model)
+                {
+                    return Html::a(basename($model->constancia_ingles), ['download', 'filename' => $model -> constancia_ingles]);
+                }
+            ],
+            //'constancia_servicio_social',
+            [
+                'attribute' => 'constancia_servicio_social',
+                'format' => 'html',
+                'value' => function($model)
+                {
+                    return Html::a(basename($model->constancia_servicio_social), ['download', 'filename' => $model -> constancia_servicio_social]);
+                }
+            ],
+
+            //'constancia_creditos_complementarios',
+            [
+                'attribute' => 'constancia_creditos_complementarios',
+                'format' => 'html',
+                'value' => function($model)
+                {
+                    return Html::a(basename($model->constancia_creditos_complementarios), ['download', 'filename' => $model -> constancia_creditos_complementarios]);
+                }
+            ],
+
             'created_at',
             [ 'label' => 'Estado', 'value' => function ($searchModel) 
             { 
                 return $searchModel->estadoRegistro->nombre; 
             } ],
-            'estado_registro_id',
+            //'estado_registro_id',
         ],
     ]) ?>
 

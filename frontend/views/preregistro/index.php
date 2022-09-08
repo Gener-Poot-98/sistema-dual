@@ -21,6 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Create Preregistro', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
+
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
@@ -34,6 +35,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'matricula',
             'email:email',
             'ingenieria_id',
+            [
+                'attribute' => 'kardex',
+                'format' => 'html',
+                'value' => function($model)
+                {
+                    return Html::a($model->kardex, ['download', 'filename' => $model -> kardex]);
+                }
+            ],
             //'kardex',
             //'constancia_ingles',
             //'constancia_servicio_social',
@@ -44,7 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Preregistro $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
-                 }
+                }
             ],
         ],
     ]); ?>

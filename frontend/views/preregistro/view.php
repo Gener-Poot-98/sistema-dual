@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="preregistro-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
+    
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
@@ -26,10 +26,42 @@ $this->params['breadcrumbs'][] = $this->title;
             { 
                 return $searchModel->ingenieria->nombre; 
             } ],
-            'kardex',
-            'constancia_ingles',
-            'constancia_servicio_social',
-            'constancia_creditos_complementarios',
+            //'kardex',
+            [
+                'attribute' => 'kardex',
+                'format' => 'html',
+                'value' => function($model)
+                {
+                    return Html::a(basename($model->kardex), ['download', 'filename' => $model -> kardex]);
+                }
+            ],
+            //'constancia_ingles',
+            [
+                'attribute' => 'constancia_ingles',
+                'format' => 'html',
+                'value' => function($model)
+                {
+                    return Html::a(basename($model->constancia_ingles), ['download', 'filename' => $model -> constancia_ingles]);
+                }
+            ],
+            //'constancia_servicio_social',
+            [
+                'attribute' => 'constancia_servicio_social',
+                'format' => 'html',
+                'value' => function($model)
+                {
+                    return Html::a(basename($model->constancia_servicio_social), ['download', 'filename' => $model -> constancia_servicio_social]);
+                }
+            ],
+            //'constancia_creditos_complementarios',
+            [
+                'attribute' => 'constancia_creditos_complementarios',
+                'format' => 'html',
+                'value' => function($model)
+                {
+                    return Html::a(basename($model->constancia_creditos_complementarios), ['download', 'filename' => $model -> constancia_creditos_complementarios]);
+                }
+            ],
             'created_at',
             //'estado_registro_id',
             [ 'label' => 'Estado', 'value' => function ($searchModel) 
