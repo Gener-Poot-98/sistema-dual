@@ -54,12 +54,7 @@ $baseUrl = $asset->baseUrl;
                         . '</li>';
 
 
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> main
                     if (Yii::$app->user->isGuest) {
 
                         echo '<li class="nav-item"> '
@@ -71,8 +66,7 @@ $baseUrl = $asset->baseUrl;
                             )
                             . '</li>';
 
-<<<<<<< HEAD
-=======
+
                             echo '<li class="nav-item"> '
                             . Html::a(
                                 "<i class=\"fa fa-icon\"></i> "
@@ -82,7 +76,7 @@ $baseUrl = $asset->baseUrl;
                             )
                             . '</li>';
 
->>>>>>> main
+
 
                         echo '<li class="nav-item">'
 

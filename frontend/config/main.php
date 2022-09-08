@@ -8,11 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
-<<<<<<< HEAD
-    'name' => 'Sistema-Dual',
-=======
     'name' => "Sistema Dual",
->>>>>>> main
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
