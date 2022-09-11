@@ -6,6 +6,7 @@ use Yii;
 use yii\db\Expression;
 use yii\helpers\ArrayHelper;
 use common\models\Ingenieria;
+use common\models\Departamento;
 
 /**
  * This is the model class for table "proyecto".
@@ -90,6 +91,20 @@ class Proyecto extends \yii\db\ActiveRecord
     public function getDepartamento()
     {
         return $this->hasOne(Departamento::className(), ['id' => 'departamento_id']);
+    }
+
+    public function getDepartamentoList()
+    {
+        $departamento = Departamento::find()->all();
+
+        $departamentoList = ArrayHelper::map($departamento, 'id', 'nombre');
+
+        return $departamentoList;
+    }
+
+    public function getDepartamentoNombre() 
+    { 
+        return $this->departamento->nombre; 
     }
 
     /**

@@ -31,7 +31,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'nombre',
-            'departamento_id',
+            //'departamento_id',
+            ['label' => 'Departamento','attribute' => 'departamentoNombre', 'filter' => $searchModel->getDepartamentoList() ],
+
             //'ingenieria_id',
             [ 'label' => 'Ingenieria','attribute' => 'ingenieriaNombre', 'filter' => $searchModel->getIngenieriasList() ],
             'perfil_estudiante_id',
