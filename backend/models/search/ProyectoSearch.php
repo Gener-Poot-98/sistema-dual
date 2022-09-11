@@ -11,6 +11,7 @@ use common\models\Proyecto;
  */
 class ProyectoSearch extends Proyecto
 {
+    public $ingenieriaNombre;
     /**
      * {@inheritdoc}
      */
@@ -18,7 +19,7 @@ class ProyectoSearch extends Proyecto
     {
         return [
             [['id', 'departamento_id', 'ingenieria_id', 'perfil_estudiante_id', 'empresa_id', 'asesor_externo_id', 'estado_proyecto_id'], 'integer'],
-            [['nombre'], 'safe'],
+            [['nombre', 'ingenieriaNombre'], 'safe'],
         ];
     }
 
@@ -47,6 +48,16 @@ class ProyectoSearch extends Proyecto
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
+        
+        $dataProvider->setSort([ 
+            'attributes' => [ 
+                'nombre', 
+                'departamento_id', 
+                'ingenieriaNombre' => [ 
+                    'asc' => ['ingenieria.nombre' => SORT_ASC], 
+                    'desc' => ['ingenieria.nombre' => SORT_DESC], 
+                    'label' => 'Ingeniería' ], 
+                'perfil_estudiante_id', ] ]);
 
         $this->load($params);
 
@@ -68,6 +79,10 @@ class ProyectoSearch extends Proyecto
         ]);
 
         $query->andFilterWhere(['like', 'nombre', $this->nombre]);
+
+        $query->joinWith(['ingenieria' => function ($q) {
+            $q->andFilterWhere(['=', 'ingenieria.id', $this->ingenieriaNombre]);
+            }]);
 
         return $dataProvider;
     }
