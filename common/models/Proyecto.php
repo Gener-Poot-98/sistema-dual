@@ -3,6 +3,9 @@
 namespace common\models;
 
 use Yii;
+use yii\db\Expression;
+use yii\helpers\ArrayHelper;
+use common\models\Ingenieria;
 
 /**
  * This is the model class for table "proyecto".
@@ -138,4 +141,20 @@ class Proyecto extends \yii\db\ActiveRecord
     {
         return $this->hasMany(ProyectoDocente::className(), ['proyecto_id' => 'id']);
     }
+
+    public function getIngenieriasList()
+    {
+        $ingenierias = Ingenieria::find()->all();
+
+        $ingenieriasList = ArrayHelper::map($ingenierias, 'id', 'nombre');
+
+        return $ingenieriasList;
+    }
+
+    public function getIngenieriaNombre() 
+    { 
+        return $this->ingenieria->nombre; 
+    }
+
+
 }
