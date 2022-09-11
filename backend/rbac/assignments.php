@@ -1,6 +1,7 @@
 <?php
 
 return [
+<<<<<<< HEAD
     1 => [
         'Administrador',
     ],
@@ -8,4 +9,6 @@ return [
     4 => [
         'Administrador',
     ],
+=======
+>>>>>>> main
 ];
