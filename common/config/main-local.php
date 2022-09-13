@@ -4,7 +4,7 @@ return [
     'components' => [
         'db' => [
             'class' => \yii\db\Connection::class,
-            'dsn' => 'mysql:host=localhost;dbname=sistema-dual',
+            'dsn' => 'mysql:host=localhost;dbname=sistema-modelo-dual',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',

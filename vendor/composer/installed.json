@@ -68,17 +68,17 @@
         },
         {
             "name": "bower-asset/bootstrap",
-            "version": "v5.2.0",
-            "version_normalized": "5.2.0.0",
+            "version": "v5.2.1",
+            "version_normalized": "5.2.1.0",
             "source": {
                 "type": "git",
                 "url": "git@github.com:twbs/bootstrap.git",
-                "reference": "edf9c40956d19e6ab3f9151bfe0dfac6be06fa21"
+                "reference": "23e50829f958ea1d741d63e2781716be037e4644"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/edf9c40956d19e6ab3f9151bfe0dfac6be06fa21",
-                "reference": "edf9c40956d19e6ab3f9151bfe0dfac6be06fa21"
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/23e50829f958ea1d741d63e2781716be037e4644",
+                "reference": "23e50829f958ea1d741d63e2781716be037e4644"
             },
             "type": "bower-asset",
             "installation-source": "dist",
@@ -1474,17 +1474,17 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.14.0",
-            "version_normalized": "4.14.0.0",
+            "version": "v4.15.1",
+            "version_normalized": "4.15.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "34bea19b6e03d8153165d8f30bba4c3be86184c1"
+                "reference": "0ef6c55a3f47f89d7a374e6f835197a0b5fcf900"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/34bea19b6e03d8153165d8f30bba4c3be86184c1",
-                "reference": "34bea19b6e03d8153165d8f30bba4c3be86184c1",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/0ef6c55a3f47f89d7a374e6f835197a0b5fcf900",
+                "reference": "0ef6c55a3f47f89d7a374e6f835197a0b5fcf900",
                 "shasum": ""
             },
             "require": {
@@ -1495,7 +1495,7 @@
                 "ircmaxell/php-yacc": "^0.0.7",
                 "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
-            "time": "2022-05-31T20:59:12+00:00",
+            "time": "2022-09-04T07:30:47+00:00",
             "bin": [
                 "bin/php-parse"
             ],
@@ -1527,7 +1527,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.14.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.1"
             },
             "install-path": "../nikic/php-parser"
         },
@@ -3480,17 +3480,17 @@
         },
         {
             "name": "sebastian/type",
-            "version": "3.1.0",
-            "version_normalized": "3.1.0.0",
+            "version": "3.2.0",
+            "version_normalized": "3.2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/type.git",
-                "reference": "fb44e1cc6e557418387ad815780360057e40753e"
+                "reference": "fb3fe09c5f0bae6bc27ef3ce933a1e0ed9464b6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/fb44e1cc6e557418387ad815780360057e40753e",
-                "reference": "fb44e1cc6e557418387ad815780360057e40753e",
+                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/fb3fe09c5f0bae6bc27ef3ce933a1e0ed9464b6e",
+                "reference": "fb3fe09c5f0bae6bc27ef3ce933a1e0ed9464b6e",
                 "shasum": ""
             },
             "require": {
@@ -3499,11 +3499,11 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.5"
             },
-            "time": "2022-08-29T06:55:37+00:00",
+            "time": "2022-09-12T14:47:03+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "installation-source": "dist",
@@ -3527,7 +3527,7 @@
             "homepage": "https://github.com/sebastianbergmann/type",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/type/issues",
-                "source": "https://github.com/sebastianbergmann/type/tree/3.1.0"
+                "source": "https://github.com/sebastianbergmann/type/tree/3.2.0"
             },
             "funding": [
                 {
@@ -5571,17 +5571,17 @@
         },
         {
             "name": "yiisoft/yii2-debug",
-            "version": "2.1.19",
-            "version_normalized": "2.1.19.0",
+            "version": "2.1.21",
+            "version_normalized": "2.1.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "84d20d738b0698298f851fcb6fc25e748d759223"
+                "reference": "fa9fa02e242c1b744eb68045ee8e9d698134836d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/84d20d738b0698298f851fcb6fc25e748d759223",
-                "reference": "84d20d738b0698298f851fcb6fc25e748d759223",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/fa9fa02e242c1b744eb68045ee8e9d698134836d",
+                "reference": "fa9fa02e242c1b744eb68045ee8e9d698134836d",
                 "shasum": ""
             },
             "require": {
@@ -5595,7 +5595,7 @@
                 "yiisoft/yii2-coding-standards": "~2.0",
                 "yiisoft/yii2-swiftmailer": "*"
             },
-            "time": "2022-04-05T20:35:14+00:00",
+            "time": "2022-09-06T17:40:08+00:00",
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
@@ -5749,17 +5749,17 @@
         },
         {
             "name": "yiisoft/yii2-gii",
-            "version": "2.2.4",
-            "version_normalized": "2.2.4.0",
+            "version": "2.2.5",
+            "version_normalized": "2.2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "80893fc4c0df97f3638938948bf34ca43dd8bff6"
+                "reference": "e2f2dcf0f16713e678df6ba70362c99a215a8f72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/80893fc4c0df97f3638938948bf34ca43dd8bff6",
-                "reference": "80893fc4c0df97f3638938948bf34ca43dd8bff6",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/e2f2dcf0f16713e678df6ba70362c99a215a8f72",
+                "reference": "e2f2dcf0f16713e678df6ba70362c99a215a8f72",
                 "shasum": ""
             },
             "require": {
@@ -5771,7 +5771,7 @@
                 "phpunit/phpunit": "4.8.34",
                 "yiisoft/yii2-coding-standards": "~2.0"
             },
-            "time": "2021-12-30T08:36:02+00:00",
+            "time": "2022-09-04T10:00:25+00:00",
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
@@ -5835,17 +5835,17 @@
         },
         {
             "name": "yiisoft/yii2-symfonymailer",
-            "version": "2.0.3",
-            "version_normalized": "2.0.3.0",
+            "version": "2.0.4",
+            "version_normalized": "2.0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-symfonymailer.git",
-                "reference": "77baddfd806005604624ec58e6b55b18f31eeaaf"
+                "reference": "82f5902551a160633c4734b5096977ce76a809d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-symfonymailer/zipball/77baddfd806005604624ec58e6b55b18f31eeaaf",
-                "reference": "77baddfd806005604624ec58e6b55b18f31eeaaf",
+                "url": "https://api.github.com/repos/yiisoft/yii2-symfonymailer/zipball/82f5902551a160633c4734b5096977ce76a809d9",
+                "reference": "82f5902551a160633c4734b5096977ce76a809d9",
                 "shasum": ""
             },
             "require": {
@@ -5856,7 +5856,7 @@
             "require-dev": {
                 "phpunit/phpunit": "9.5.10"
             },
-            "time": "2022-02-10T13:42:46+00:00",
+            "time": "2022-09-04T10:48:21+00:00",
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {

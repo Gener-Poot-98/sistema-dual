@@ -16,7 +16,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'departamento_id')->textInput() ?>
 
-    <?= $form->field($model, 'ingenieria_id')->textInput() ?>
+    <?= $form->field($model, 'ingenieria_id')->dropDownList($model->getIngenieriasList(), ['prompt' => 'Seleccione la Ingeniería']) ?>
 
     <?= $form->field($model, 'perfil_estudiante_id')->textInput() ?>
 
